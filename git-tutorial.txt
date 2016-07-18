@@ -1,0 +1,45 @@
+git config --global user.name "Seu nome"
+git config --global user.email "Seu e-mail"
+
+mkdir git-tutorial
+cd git-tutorial
+git init
+echo "# git-tutorial" >> README.md
+git add README.md
+git commit -m "primeiro commit"
+git log
+git remote add origin https://github.com/DenivaldoCruz/git-tutorial.git
+git push -u origin master
+
+echo "foo" >> foo.txt
+git add foo.txt
+git status
+git commit -m "inclusao foo.txt"
+
+echo "foo 2" >> foo.txt
+git diff
+git status
+git add foo.txt
+git status
+git commit -m "aleracao foo.txt"
+
+git log
+git reset --soft f79003da6aab5b6a59702902def306b56097e6ff (penultima revisao)
+get status
+
+git reset --mixed f79003da6aab5b6a59702902def306b56097e6ff (penultima revisao)
+get status
+
+git reset --hard f79003da6aab5b6a59702902def306b56097e6ff (penultima revisao)
+get status
+
+echo "bla" >> bla.txt
+git add bla.txt
+git commit -m "inclusao bla"
+git reset --hard f79003da6aab5b6a59702902def306b56097e6ff (penultima revisao)
+get status
+
+git branch b1
+git checkout b1
+
+git checkout -b b2
