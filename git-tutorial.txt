@@ -74,6 +74,14 @@ git add buzz.txt
 git reset --hard HEAD
 
 
+git stash
+git stash list
+git stash apply
+git stash clear
+
+
+
+
 
 
 
