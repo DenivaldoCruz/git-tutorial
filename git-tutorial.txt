@@ -42,4 +42,28 @@ get status
 git branch b1
 git checkout b1
 
+echo "bla" >> bla.txt
+get status
+git add bla.txt
+get status
+git commit -m "inclusao bla"
+get status
+
+git checkout master
+git log
+git merge b1
+git log --graph
+
 git checkout -b b2
+
+echo "pow" >> pow.txt
+git add pow.txt
+git commit -m "inclusao pow.txt"
+
+git checkout master
+git log
+git rebase b2
+git log --graph
+
+
+
