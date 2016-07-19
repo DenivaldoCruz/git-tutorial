@@ -65,5 +65,15 @@ git log
 git rebase b2
 git log --graph
 
+git clone https://github.com/DenivaldoCruz/git-tutorial github-tutorial
+
+echo "buzz" >> buzz.txt
+
+git add buzz.txt
+
+git reset --hard HEAD
+
+
+
 
 
