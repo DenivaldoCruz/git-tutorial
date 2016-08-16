@@ -79,9 +79,12 @@ git stash list
 git stash apply
 git stash clear
 
+git tag -a 1.0.0 -m "Finalizado"
 
+git revert $id_commit
 
-
+git fetch
+git merge origin/master
 
 
 
